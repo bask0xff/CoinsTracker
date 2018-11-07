@@ -46,4 +46,4 @@ class RecyclerViewAdapter(private var result: List<ResponseItem>, var resources:
             }
         }
     }
-}
+}jm
