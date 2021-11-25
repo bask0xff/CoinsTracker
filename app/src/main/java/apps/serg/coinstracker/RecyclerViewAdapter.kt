@@ -7,9 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item.view.*
 
-/**
- * Created by vlad on 12.12.2017.
- */
 class RecyclerViewAdapter(private var result: List<ResponseItem>, var resources: Resources) : RecyclerView.Adapter<RecyclerViewAdapter.CardViewHolder>() {
 
     override fun getItemCount(): Int {

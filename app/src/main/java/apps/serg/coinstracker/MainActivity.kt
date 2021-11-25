@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
     private fun doRequest() {
         val apiService = RetrofitGetInterface.create()
         apiService.getCryptocurrency()
-                .observeOn(AndroidSchedulers.mainThread())// Говорим в какой поток вернуть
-                .subscribeOn(Schedulers.io()) // Выбераем io - для работы с данными и интернетом
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
                 .subscribe({
-                    result -> arrayListInit(result) // Здесь у нас калбек
+                    result -> arrayListInit(result)
                 }, { error ->
                     error.printStackTrace()
                 })

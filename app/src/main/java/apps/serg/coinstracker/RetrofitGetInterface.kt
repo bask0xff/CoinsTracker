@@ -6,9 +6,6 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
-/**
- * Created by vlad on 11.12.2017.
- */
 interface RetrofitGetInterface {
     @GET("v1/ticker/")
     fun getCryptocurrency(): Observable<List<ResponseItem>>
